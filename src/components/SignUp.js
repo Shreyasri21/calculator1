@@ -6,9 +6,7 @@ function SignUp() {
   const [nameerr, setNameerr] = useState(false);
   // const [validName, setValidName] = useState("");
   const [emailerr, setEmailerr] = useState(false);
-  const [inputobj, setInputobj] = useState([]);
   const navigate = useNavigate();
-  const [count, setcount] = useState(0);
   const [input, setInput] = useState({
     name: "",
     email: "",
@@ -16,10 +14,9 @@ function SignUp() {
   });
   const handleSubmit = (e) => {
     e.preventDefault();
-    setInputobj(inputobj.push(input));
-    setcount(count + 1);
+    
     if (emailerr === false && nameerr === false) {
-      localStorage.setItem(count, JSON.stringify(inputobj));
+      localStorage.setItem("user", JSON.stringify(input));
       navigate("/");
     }
   };
