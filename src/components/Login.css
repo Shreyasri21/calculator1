@@ -1,0 +1,33 @@
+.login {
+    background-color: salmon;
+    width: 25rem;
+    height: 15rem;
+    border: solid black;
+
+    padding: 1rem;
+}
+
+.calc-login {
+    background-color: black;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calc-login button {
+    padding: 0.5rem;
+    border-radius: 1rem;
+}
+
+.calc-login button:hover {
+    background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+}
+
+.calc-login button::before {
+    top: -5px;
+    right: -5px;
+    bottom: -5px;
+    left: -5px;
+}

@@ -1,0 +1,44 @@
+.calc-signup {
+    border: black solid;
+    border-radius: 1rem;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: aliceblue;
+}
+
+.inputs-sign {
+    width: 25rem;
+    height: 15rem;
+    background-color: rgb(73, 110, 63);
+    padding: 1rem;
+}
+
+.inputs-sign label {
+    margin-top: 1rem;
+    margin-right: 1rem;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+
+}
+
+.calc-signup button {
+    background-color: black;
+    color: aliceblue;
+    border: solid cyan;
+    border-radius: 1rem;
+    padding: 1rem;
+}
+
+.calc-signup button:hover {
+    color: #111;
+    background-color: #39ff14;
+    box-shadow: 0 0 50px #39ff14;
+}
